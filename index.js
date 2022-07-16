@@ -48,6 +48,7 @@ const questions = [
     name: 'email',
     },
 ];
+
 const fileName = "README.md"
 
 inquirer
@@ -59,9 +60,51 @@ inquirer
     var usage = response.usage
     var people = response.contributing
     var tests = response.tests
+    var license = response.license
     var gitUser = response.gitUser
     var email = response.email
 })
+
+const data = 
+`# ${title}
+
+## Description
+
+${desc}
+
+## Table of Contents
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [License](#license)
+* [Questions](#Questions)
+
+## Installation
+
+${install}
+
+## Usage
+
+${usage}
+
+## Contributing
+
+${people}
+
+## Tests
+
+${tests}
+
+## License
+
+${license}
+
+## Questions
+
+${gitUser} ${email}
+`
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
