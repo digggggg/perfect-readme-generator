@@ -10,12 +10,12 @@ const questions = [
     {
     type: 'input',
     message: 'Describe your project...',
-    name: 'description',
+    name: 'desc',
     },
     {
     type: 'input',
     message: 'How to install your project?',
-    name: 'installation',
+    name: 'install',
     },
     {
     type: 'input',
@@ -40,7 +40,7 @@ const questions = [
     {
     type: 'input',
     message: 'What is your github username?',
-    name: 'git-username',
+    name: 'gitUser',
     },
     {
     type: 'input',
@@ -48,7 +48,20 @@ const questions = [
     name: 'email',
     },
 ];
+const fileName = "README.md"
 
+inquirer
+.prompt(questions)
+.then((response) => {
+    var title = response.title
+    var descr = response.desc
+    var install = response.install
+    var usage = response.usage
+    var people = response.contributing
+    var tests = response.tests
+    var gitUser = response.gitUser
+    var email = response.email
+})
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
