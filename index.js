@@ -92,12 +92,13 @@ ${descr}
 
 ## Table of Contents
 
+* [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [License](#license)
-* [Questions](#Questions)
+* [Questions](#questions)
 
 ## Installation
 
@@ -121,7 +122,9 @@ ${license} ${licenseDesc}
 
 ## Questions
 
-${gitUser} ${email}
+If you have any questions about my project contact me at: 
+GitHub: https://github.com/${gitUser}
+Email: ${email}
 `
 
 
